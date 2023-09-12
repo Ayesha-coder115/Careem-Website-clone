@@ -1,0 +1,119 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(2, 105, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for login form and image */
+.login-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(30, 233, 138);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Login form styles */
+.login-form {
+  width: 50%;
+  padding: 20px;
+}
+
+.login-form h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(2, 105, 57);
+  border-radius: 5px;
+}
+
+/* Password toggle icon styles */
+.input-group .password-toggle {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  background-color: #fff; /* Background color of the eye */
+  border: 1px solid #ccc; /* Border around the eye */
+  border-radius: 50%; /* Make it a circle */
+  overflow: hidden;
+}
+
+.input-group .password-toggle::before {
+  content: "\f06e"; /* Unicode for an eye icon (you can replace this with your desired icon) */
+  font-family: FontAwesome; /* You can use a font library like FontAwesome for icons */
+  font-size: 14px; /* Adjust the icon size as needed */
+  color: #000; /* Color of the icon */
+}
+
+/* Login button styles */
+button[type="submit"] {
+  background-color: rgb(2, 105, 57);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+}
+button[type="submit"] a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+button[type="submit"] a:hover {
+  color: rgb(2, 105, 57);
+  font-weight: bold;
+}
+/* Image styles */
+.login-image {
+  width: 50%;
+}
+
+.login-image img {
+  width: 100%;
+  border-radius: 10px;
+}

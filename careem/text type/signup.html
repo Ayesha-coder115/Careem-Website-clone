@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./signup.css" />
+    <title>Sign Up | Careem</title>
+  </head>
+  <body>
+    <!-- big container -->
+    <div class="signup-container">
+      <!-- text box -->
+      <div class="signup-form">
+        <!-- heading -->
+        <h2>Create Your Account</h2>
+
+        <!-- form action/ form starting -->
+        <form action="#" method="POST">
+          <!-- inputs -->
+          <div class="input-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required />
+          </div>
+          <div class="input-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required />
+          </div>
+          <div class="input-group">
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <span
+              class="password-toggle"
+              onclick="togglePasswordVisibility()"
+            ></span>
+          </div>
+          <!-- input ending -->
+
+          <!-- button for signup  -->
+          <button type="submit" class="signup-button">
+            <a href="../index.html">Sign up</a>
+          </button>
+        </form>
+        <!-- form ending  -->
+      </div>
+      <!-- text box ending -->
+
+      <!-- image div  -->
+      <div class="signup-image">
+        <img src="../images or videos/img-signup.png" alt="Signup Image" />
+      </div>
+      <!-- image div ending  -->
+    </div>
+    <!-- form ending  -->
+
+    <!-- java script  -->
+    <script>
+      function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>

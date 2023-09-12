@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./log-in.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      rel="shortcut icon"
+      href="https://upload-cdn.careem.com/product_bcef266a29.png"
+      type="image/x-icon"
+    />
+    <title>Login Page | Careem</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login to Your Account</h2>
+            <form action="#" method="POST" id="login-form">
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8">
+                    <span class="password-toggle" onclick="togglePasswordVisibility()"></span>
+                </div>
+                <button type="submit"><a href="../index.html">Login</a></button>
+                <button type="submit"><a href="../text type/signup.html">Sign up</a></button>
+            </form>
+        </div>
+        <div class="login-image">
+            <img src="../images or videos/img-signup.png" alt="Login Image">
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+
+        // JavaScript to validate the form
+        var form = document.getElementById("login-form");
+        form.addEventListener("submit", function (event) {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // You can add more validation logic here if needed
+
+            if (!emailIsValid(email) || password.length < 8) {
+                event.preventDefault(); // Prevent form submission
+                alert("Please enter a valid email address and password (at least 8 characters).");
+            }
+        });
+
+        // Function to check if email is valid
+        function emailIsValid(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+    </script>
+</body>
+</html>

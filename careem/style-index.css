@@ -1,0 +1,427 @@
+/* Global Styles */
+* {
+  margin: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Logo Styles */
+.logo {
+  height: 24.19px;
+  width: 125.9px;
+  margin-left: 0.6rem;
+}
+
+/* Hover Effect for Logo */
+.logo:hover {
+  cursor: pointer;
+}
+
+/* Navbar Styles */
+.navbar-items {
+  margin-left: 5rem;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  color: rgb(53, 50, 50);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Hover Effect for Navbar Links */
+.navbar-items a:hover {
+  color: rgb(30, 233, 138);
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* Button Styles */
+.btn {
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(30, 233, 138);
+  background-color: rgb(30, 233, 138);
+  float: right;
+  transition-duration: 0.5s;
+}
+
+/* Space Element Styles */
+.space {
+  width: 17rem;
+  height: 4vh;
+}
+
+.btn a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgb(53, 50, 50);
+  font-weight: 550;
+}
+
+/* Hover Effect for Buttons */
+.btn:hover {
+  margin-top: -0.3rem;
+}
+
+/* Navbar Search Styles */
+.nav-search {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Hover Effect for Navbar Search */
+.nav-search:hover {
+  cursor: pointer;
+}
+
+/* Search Select Styles */
+.search-select {
+  width: 7rem;
+  height: 3rem;
+  border: transparent;
+}
+
+/* Hover and Focus Styles for Search Select */
+.search-select:hover,
+.search-select:focus,
+.search-select:active {
+  border: transparent;
+}
+
+/* Navbar Item Hover Effect Styles */
+.navbar-items a {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-items a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1rem;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(30, 233, 138);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-items a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Video Styles */
+video {
+  height: 100vh;
+  width: 96vw;
+  margin-top: 0.8rem;
+  border-radius: 20px;
+  background-color: rgb(30, 233, 138);
+}
+
+/* Box Styles */
+#boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.box1 {
+  width: 25%;
+  height: 70vh;
+  border-radius: 1rem;
+  padding: 15px 22px;
+  line-height: 2.5rem;
+}
+
+.box1 h1 {
+  font-size: 4rem;
+}
+
+.box1 h2 {
+  font-size: 2.5rem;
+}
+
+.box1 .two {
+  margin-top: 3rem;
+}
+
+.box1 span {
+  font-size: 1.3rem;
+}
+
+/* Image Logo Styles */
+.img-logo {
+  width: 2rem;
+}
+
+/* box in which all options are like ride etc*/
+.one {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* options like rides taxi etc */
+.one span {
+  font-weight: bolder;
+}
+
+.one span:hover {
+  cursor: pointer;
+}
+
+/* Content Container Styles (slides) */
+.content {
+  margin: 2rem;
+  padding: 0;
+  border-radius: 10px;
+  width: 95%;
+  height: 70vh;
+  overflow: hidden;
+  border: 1px transparent;
+  box-shadow: 20px hsl(0, 0%, 3%);
+  z-index: -1;
+}
+
+.show {
+  justify-content: center;
+  align-items: center;
+}
+
+.show img {
+  width: 60rem;
+  height: 30rem;
+}
+
+/* Slide Content Styles */
+.slide_content {
+  float: left;
+  width: 100%;
+  height: 50vh;
+}
+
+.slides {
+  width: 2400px;
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide_content:nth-child(1) {
+  z-index: 1;
+}
+
+/* Keyframe Animation for Slides */
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  40% {
+    margin-left: calc(-600px * 1);
+  }
+  60% {
+    margin-left: calc(-600px * 2);
+  }
+  80% {
+    margin-left: calc(-600px * 3);
+  }
+}
+
+/* About Us Section Styles */
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 7rem;
+}
+
+/* Paragraph has h1 and p styles in About Us Section */
+.para {
+  width: 70%;
+}
+
+/* h1 Styles in About Us Section */
+.para h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 0px 0px 0px 1.3rem;
+  color: #2d2e2e;
+}
+
+/* Paragraph Styles in About Us Section */
+.para p {
+  margin: 1.3rem 0px 0px 0.6rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #2d2e2e;
+  font-weight: 510;
+}
+
+/* Button Styles in .para in About Us Section */
+.para button {
+  background-color: rgb(30, 233, 138);
+  width: 7rem;
+  height: 2rem;
+  font-size: 1rem;
+  border: 0.3rem solid rgb(30, 233, 138);
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+/* Hover Effect for Buttons in About Us Section */
+.para button:hover {
+  cursor: pointer;
+}
+
+/* Alternate Button Style for another .para as the bg color is green and the button color should be white */
+.para .btn2 {
+  background-color: white;
+  width: 7rem;
+  height: 2rem;
+  font-size: 1rem;
+  border: 0.3rem solid white;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  color: black;
+}
+
+/* Footer Panel Styles */
+.foot-panel-two {
+  margin-top: 3rem;
+  background-color: white;
+  height: 19.5rem;
+  color: #2d2e2e;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Footer List and Heading Styles */
+.foot-panel-two li, h4 {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+/* Footer Link Styles */
+.foot-panel-two li a {
+  text-decoration: none;
+  color: #2d2e2e;
+  line-height: 23px;
+  font-size: 0.85rem;
+}
+
+/* Logo Image Styles */
+.lg {
+  width: 6rem;
+  height: 1.3rem;
+}
+
+/* App Image Styles */
+.app {
+  width: 8rem;
+  height: 2.4rem;
+}
+
+/* Hover Effect for Service and other's Items */
+.items {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+}
+
+.items::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1rem;
+  bottom: 0;
+  color: rgb(30, 233, 138);
+  left: 0;
+  background-color: rgb(30, 233, 138);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* Hover Effect for Items animations */
+.items:hover::after {
+  transform: scaleX(1);
+  color: rgb(30, 233, 138);
+  transform-origin: bottom left;
+}
+
+/* Footer Link Hover Effect */
+footer a:hover {
+  color: rgb(30, 233, 138);
+}
+
+
+/* Global Styles */
+/* ... (existing styles) */
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for small screens here */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-items {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .space {
+    display: none;
+  }
+
+  .btn {
+    float: none;
+    margin-top: 1rem;
+  }
+
+  /* Add more styles as needed for small screens */
+}
+
+/* Media Query for Medium Screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Adjust styles for medium screens here */
+  nav {
+    /* Modify styles as needed */
+  }
+
+  /* Add more styles as needed for medium screens */
+}
+
+/* Media Query for Large Screens */
+@media screen and (min-width: 1025px) {
+  /* Adjust styles for large screens here */
+  nav {
+    /* Modify styles as needed */
+  }
+
+  /* Add more styles as needed for large screens */
+}
+
+/* Add more media queries for other screen sizes as needed */

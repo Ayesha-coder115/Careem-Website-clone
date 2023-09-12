@@ -1,0 +1,152 @@
+/* Reset some default browser styles */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(2, 105, 57);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for sign-up form */
+.signup-container {
+  text-align: center;
+  background-color: rgb(30, 233, 138);
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.2);
+  padding: 1.875rem;
+  width: 90rem; /* 31.25rem = 312.5px */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Sign-up form styles */
+.signup-form {
+  width: 50%;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.signup-form h2 {
+  font-size: 3rem; /* 2.4rem = 24px */
+  color: #333;
+  margin-bottom: 1.2rem;
+  margin-left: 5rem;
+}
+/* first name etc */
+.input-group {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.2rem solid rgb(2, 105, 57);
+  border-radius: 0.625rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 1.7rem; /* 1.6rem = 16px */
+}
+
+.input-group input:focus {
+  border-color: #1ee98a;
+  box-shadow: 0 0 0.5rem rgba(30, 233, 138, 0.5);
+}
+
+/* Password toggle icon styles */
+.input-group .password-toggle {
+  position: absolute;
+  top: 70%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 0.2rem solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.input-group .password-toggle::before {
+  content: "\f06e"; /* Unicode for an eye icon (you can replace this with your desired icon) */
+  font-family: FontAwesome; /* You can use a font library like FontAwesome for icons */
+  font-size: 1.4rem; /* 1.4rem = 14px */
+  color: #000;
+}
+
+/* HTML5 validation styles */
+input:invalid {
+  border-color: rgb(
+    2,
+    105,
+    57
+  ); /* Change to your preferred invalid input border color */
+}
+
+/* Sign-up button styles with animation */
+.signup-button {
+  background-color: rgb(2, 105, 57);
+  color: #fff;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 15rem;
+  transition: background-color 0.3s;
+  animation: scaleUp 0.3s ease-in-out 1;
+}
+
+.signup-button:hover {
+  background-color: white;
+  color: rgb(2, 105, 57);
+  font-weight: bold;
+  cursor: auto;
+}
+button[type="submit"] a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+button[type="submit"] a:hover {
+  color: rgb(2, 105, 57);
+  font-weight: bold;
+}
+/* Image styles */
+.signup-image {
+  width: 50%;
+}
+
+.signup-image img {
+  width: 100%;
+  border-radius: 0.625rem;
+  height: 100%;
+}
